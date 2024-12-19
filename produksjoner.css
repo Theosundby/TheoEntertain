@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("./bakgrunn.jpg");
+    background-image: url("./scene\ bakgrunn.png");
     background-size: cover;
     color: #f0f0f0;
 }
@@ -71,4 +71,30 @@ header {
   
   .social-media img:hover {
     transform: scale(1.2);
+  }
+
+  footer {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #produksjoner {
+    background-color: #1a1a1a;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    margin-top: 30px;
+    border-radius: 20px;
+    justify-self: center;
+    margin: 20px auto;
   }

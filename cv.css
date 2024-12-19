@@ -11,6 +11,7 @@ body {
     font-family: "Arial", sans-serif;
     background: url("./Sort\ hvit\ baby\ freeze.JPEG") no-repeat center center/cover;
     color: #f0f0f0;
+    position: relative;
   }
   
   header {
@@ -106,12 +107,26 @@ body {
   font-family: roboto, sans-serif;
   margin: 16px 0 16px 0;
 }
-#proff {
+
+#proff { 
   font-family: roboto, sans-serif;
   display: list-item;
+  list-style-type: disc;
+  /* list-style: none; */
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
   margin-left: -22px;
+  vertical-align: baseline;
+  
+}
+
+#proff::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
 }
 
 #tekst {
@@ -119,11 +134,52 @@ text-align: left;
 justify-self: left;
 }
 
+#erfaring {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #f0f0f0;
+  margin-top: 30px;
+  justify-self: center;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+#overskrift {
+  justify-self:end;
+  align-self: start;
+  text-align: right;
+  font-size: 36px
+
+}
+#innhold {
+  justify-self: start;
+  align-self: start;
+  text-align: left;
+}
+#innhold p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: left;
+  width: 800px;
+}
+#innhold h3 {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  text-align: left;
+  width: 800px;
+}
+
 footer {
     background-color: #1a1a1a;
     padding: 10px 20px;
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: auto;
     position: fixed;
     bottom: 0;
     width: 100%;
