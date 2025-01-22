@@ -69,18 +69,18 @@
         <img src="./dance3.JPEG" alt="Breakdance move 3" />
       </div>
     </section>
-    <section id="contact" class="section">
+    <section id="contact" class="section" >
       <h2>Kontakt meg</h2>
-      <form id="contact-form" method="POST" action="/send-email">
-        <input type="text" id="name" placeholder="Ditt navn" required />
-        <input type="email" id="email" placeholder="Din e-post" required />
-        <textarea id="message" placeholder="Din Melding" required></textarea>
+      <form id="contact-form" method="POST" action="/send-email" >
+        <input type="text" id="name" name="name" placeholder="Ditt navn" required />
+        <input type="email" id="email" name="email" placeholder="Din e-post" required />
+        <textarea id="message" name="message" placeholder="Din Melding" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
     <footer>
       <p>&copy; 2024 Theo Sundby. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./mail/mail.js"></script>
   </body>
 </html>
